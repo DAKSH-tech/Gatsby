@@ -9,7 +9,8 @@ const Notes = () => {
     return (
         <>
         <Header data={data} />
-        <p> IMAGES TO BE UPLOADED</p>
+        <img src="https://placekitten.com/800/600" alt="A kitten" className="w-20 h-20"/>
+        <p>Hi this for everyone</p>
         </>
   );
 };

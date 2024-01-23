@@ -1,7 +1,7 @@
 import React from "react";
 import Tile from "../Component/Tile";
 import Header from '../Component/Header';
-const list = [["Code", "Content Stack"], ["Notes", "Notes for Gatsby"], ["Task", "Dummy API"]];
+const list = [["contentStack", "Content Stack"], ["Notes", "Notes for Gatsby"], ["dummyAPI", "Dummy API"]];
 
 const MyNotes = () => {
    

@@ -9,7 +9,7 @@ function index() {
             <h1 className="text-3xl font-bold mb-4">Daksh's Page</h1>
             </Link>
             <p className="text-gray-700">
-            Welcome to Daksh's page. Explore and enjoy!
+            Welcome to Daksh's page. Explore
             </p>
         </div>
     </div>

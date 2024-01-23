@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import Header from '../Component/Header';
 import callAPI from "../service/callAPI";
 
-function Code() {
+function ContentStack() {
     const [profile, setProfile] = useState(null);
     useEffect(()=>{
         console.log = console.warn = console.error = () => {};
@@ -22,7 +22,7 @@ function Code() {
 
     return (
         <>
-            <Header data="Code/" />
+            <Header data="contentStack" />
             <div className="max-w-3xl mx-auto mt-8 p-4">
                 <form onSubmit={submitDataProfile} className="flex items-center">
                     <input
@@ -56,4 +56,4 @@ function Code() {
     );
 }
 
-export default Code;
+export default ContentStack;

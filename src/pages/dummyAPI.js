@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import useDaksh from '../Hook/useDaksh';
 import Header from '../Component/Header';
 
-const Task = () => {
+const DummyAPI = () => {
     const [id, setId] = useState('');
     const { data, loading, error } = useDaksh(id);
     useEffect(() => {
@@ -16,7 +16,7 @@ const Task = () => {
     
   return (
     <>
-      <Header data="Task/"></Header>
+      <Header data="dummyAPI/"></Header>
       <div className="">
         <h2 className="font-bold text-red-300 h-10 my-4 bg-red">Dummy API - Use of Personal Hook-Enter user for the data</h2>
         <form onSubmit={submitUserId}>
@@ -43,4 +43,4 @@ const Task = () => {
   );
 };
 
-export default Task;
+export default DummyAPI;

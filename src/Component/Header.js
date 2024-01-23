@@ -33,12 +33,17 @@ const Header = ({data}) => {
       <div
         style={{
           display: 'flex',
-          justifyContent: 'space-between',
+          justifyContent: 'space-evenly',
           alignItems: 'center',
         }}
         >
+          {data==="contentStack/"?(<Link to="/dakshNotes" style={style}>
+            Home
+          </Link>):(<Link to="/contentStack" style={style}>
+            ContentStack API
+          </Link>)}
         {data === "Notes/" ? (
-          <Link to="http://localhost:8000/dakshNotes" style={style}>
+          <Link to="/dakshNotes" style={style}>
             Home
           </Link>
         ) : (
@@ -46,20 +51,17 @@ const Header = ({data}) => {
             Notes
           </Link>
         )}
-        {data==="Code/"?(<Link to="http://localhost:8000/dakshNotes" style={style}>
-            Home
-          </Link>):(<Link to="/Code" style={style}>
-            Code
-          </Link>)}
-          {data==="Task/"?(<Link to="http://localhost:8000/dakshNotes" style={style}>
+
+          {data==="dummyAPI/"?(<Link to="/dakshNotes" style={style}>
             Home
           </Link>):(
-          <Link to="/Task" style={style}>
-            Tasks
+          <Link to="/dummyAPI" style={style}>
+            Dummy API
           </Link>)}
     
           
       </div>
+      <h2 >{data}</h2>
     </nav>
   );
 };
